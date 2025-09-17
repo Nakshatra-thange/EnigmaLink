@@ -1,0 +1,16 @@
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: enigmalink-mongo-db
+    restart: always
+    ports:
+      - "27017:27011"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: examplepassword
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
