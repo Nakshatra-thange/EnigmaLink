@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:create": "node ./node_modules/.bin/migrate-mongoose create",
+    "migrate:up": "node ./node_modules/.bin/migrate-mongoose up",
+    "migrate:down": "node ./node_modules/.bin/migrate-mongoose down",
+    "migrate:status": "node ./node_modules/.bin/migrate-mongoose status"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",

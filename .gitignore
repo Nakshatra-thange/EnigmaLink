@@ -1,0 +1,46 @@
+# General
+# =================================
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs
+# =================================
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backend (Node.js)
+# =================================
+backend/node_modules/
+backend/dist/
+backend/build/
+
+# Frontend (Angular)
+# =================================
+frontend/node_modules/
+frontend/dist/
+frontend/tmp/
+frontend/.angular/cache/
+frontend/coverage/
+
+# Docker
+# =================================
+# Ignore Docker Compose override files
+docker-compose.override.yml
