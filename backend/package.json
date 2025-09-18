@@ -3,15 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "NODE_ENV=production node app.js",
-    "dev": "NODE_ENV=development nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate:create": "node ./node_modules/.bin/migrate-mongoose create",
-    "migrate:up": "node ./node_modules/.bin/migrate-mongoose up",
-    "migrate:down": "node ./node_modules/.bin/migrate-mongoose down",
-    "migrate:status": "node ./node_modules/.bin/migrate-mongoose status"
-  },
+ "scripts": {
+  "start": "NODE_ENV=production node app.js",
+  "dev": "NODE_ENV=development nodemon app.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
